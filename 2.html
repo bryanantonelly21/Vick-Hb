@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js webkit chrome win js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Vick</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+		<link href="./css/styles.css" rel="stylesheet" type="text/css">
+
+      
+<body class="duo band-section">
+
+<div class="header-spacer"></div>
+
+
+<header id="sticky">
+	<h1 class="logo">
+		<img src="img/firma1.png" height="60px" alt="firma">
+	</h1>
+	<div class="button-holder"><button class="menu"><i class="icon-menu"></i><i class="icon-close hide"></i></button></div>
+</header>
+<header id="nav" class="">
+	<nav id="main">
+		<ul class="menu">
+			<li ><a class="vick" style="font-family:Verdana, Geneva, Tahoma, sans-serif;" href="Principal.html">Lo bueno</a></li>
+		</ul>
+		<span></span>
+	</nav>
+</header>
+<div class="panel band-member louis fade-me wp faded" style="opacity: 1;">
+	<div class="image">
+		<div class="bg" style="background-image: url(&quot;img/44.png&quot;); display: block;"></div><!--.bg.retinafy-->
+		
+		<div class="inner"></div></div><!--.image-->
+	
+	<div class="text"><div class="text-inner"><div class="text-inner-content">
+		<div class="text-inner">
+			<h2 style="font-size: 50px"  >"Un poco de respeto es lo único que pido"</h2>
+			<p><span>Sé que no soy muy expresivo, pero fechas como hoy ameritan serlo. Recuerdo mi primer semestre en la facultad, en resumen miserable,  miserable porque ahora puedo ver que de lo mejor que me paso en la facultad es haberte conocido, compartir momentos contigo va más allá de sonrisas generadas por tu sarcasmo y forma de ver la vida,  creo que va hasta esa parte de la vida donde uno guarda los momentos mas gratos, aunque estos sean un instante, mes o semestre, solo le agradezco a la vida el poderte llamar amigo.   </span></p>
+			
+		</div><!--.text-inner-->
+	</div></div></div><!--.text-->
+
+</div><!--.panel.band-member-->
+<div class="panel band-member harry fade-me wp faded" style="opacity: 1;">
+	<div class="image">
+		<div class="bg" style="background-image: url(&quot;img/33.png&quot;); display: block;"></div><!--.bg.retinafy-->
+		
+		<div class="inner"></div></div><!--.image-->
+	
+	<div class="text"><div class="text-inner"><div class="text-inner-content">
+		<div class="text-inner">
+			<h2 style="font-size: 50px"  >"No...noo..!!" <br> "Alberto!!"</h2>
+			<p><span>Eres grande Vick, se que lo sabes, eres un gran hijo, hermano y amigo, la verdad te admiro mucho, tienes mucho potencial y me alegra que lo estés explotando, es tu ultimo año en la universidad, se que lo harás bien, eres el gran Vick, no podría irte de otra forma.  FELIZ CUMPLEAÑOS :3     </span></p>
+			
+		</div><!--.text-inner-->
+	</div></div></div><!--.text-->
+
+</div><!--.panel.band-member-->
+</div><!--.panel.band-member-->
+<footer>
+
+	<div id="back-to-top"><a href="#"><i class="icon-up-arrow"></i></a></div>
+
+	<nav id="social">
+		<ul>
+			
+			<li style="width:300px;" ><a  style="width:300px;"target="_blank" href="#">Eres grande Vick</a></li>
+		</ul>
+	</nav>
+
+	
+		Todas las canciones las puedes encontrar en este link
+		
+		<button class="foot" onclick=location.href="https://open.spotify.com/playlist/3sDWy2BFh4GgfAOjNKr9rf?si=5E85jXW4SqqbooikYLWhpw">Music</button>
+	
+		
+
+		<br><br>
+	
+
+		Bryan te manda estas canciones 
+		<br><br>
+		<button class="foot" onclick=location.href="https://open.spotify.com/track/1G0xFA3KNiKdbjhT2asL43?si=y4ZthgGSQPK6zjHR8i5_UA">Baby I Won´t</button>	<br><br>
+		<button class="foot" onclick=location.href="https://open.spotify.com/track/3ZzUy8gfTnvFo2EQTVqOfp?si=6-BzQWyCS16n3ub9_RiFVA">Bananaphone</button>	<br><br>
+	
+		P.D. Esperamos te gusten esas canciones
+	</footer>
+	
+	
+	<br><br><br><br>
+
+</footer>
+
+<div class="screen"></div>
+
+<script src="./js/jquery.min.js.download"></script>
+<script src="./js/scripts.js.download"></script>
+<script>
+
+offsets = [0, 0, 0, 0, 100, 100, 100, 100];
+$(document).ready(function() {
+//	$(".band-member .image").append("<div class=\"filmstrip\" />");
+	$(".band-member .text").wrapInner("<div class=\"text-inner\"><div class=\"text-inner-content\"></div></div>");
+
+	$(window).scroll(function (event) {
+		var loop = 243;
+	    var scroll = $(window).scrollTop();
+	    var scrollTmp = parseInt((scroll-(parseInt(scroll/loop)*loop))/27);
+	    //console.log(scrollTmp);
+	    offset = offsets[scrollTmp];
+	    if (offset < 0) offset = 0;
+	    //console.log(offset);
+		$(".band-member .image .bg").show().css({"background-position":"0px "+offset+"%"});
+	});
+
+});
+</script>
+
+</body></html>
